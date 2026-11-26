@@ -17,7 +17,7 @@
     @apply border-2 border-gray-300 rounded-md p-2;
 }
 .form {
-  max-width: 300px;
+  max-width: 900px;
   margin: 40px auto;
   border: 1px solid #121212;
   border-radius: 8px;

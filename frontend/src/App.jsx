@@ -14,12 +14,12 @@ function App()
   return (
     <BrowserRouter>
      <Routes>
-      <Route path="/" element={<Login />}/>
+      <Route path="/" element={<Landing />}/>
       <Route path="/credit" element={<CreditLedger />}/>
       <Route path="/customers" element={<Customers />}/>
       <Route path="/dashboard" element={<Dashboard />}/>
       <Route path="/finance" element={<Finance />}/>
-      <Route path="/landing" element={<Landing />}/>
+      <Route path="/login" element={<Login />}/>
       <Route path="/remainders" element={<Remainders />}/>
       <Route path="/rag" element={<Rag />}/>
       <Route path="/settings" element={<Settings />}/>
