@@ -9,6 +9,7 @@ import Remainders from './pages/paymentremainders'
 import Settings from './pages/settings'
 import Rag from './pages/ragknowledgeassistant'
 import './App.css'
+import Register from './pages/register'
 function App()
 {
   return (
@@ -23,6 +24,7 @@ function App()
       <Route path="/remainders" element={<Remainders />}/>
       <Route path="/rag" element={<Rag />}/>
       <Route path="/settings" element={<Settings />}/>
+      <Route path='/register' element={<Register/>}/>
       
      </Routes>
     </BrowserRouter>

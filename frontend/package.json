@@ -1,6 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "-latest",
+  "name": "khatasmart-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -26,9 +25,5 @@
     "@vitejs/plugin-react": "^6.1.2",
     "oxlint": "^1.90.0",
     "vite": "^8.3.6"
-=======
-  "dependencies": {
-    "react-router-dom": "^7.18.7"
->>>>>>> 95c5e1b0b8a6fd69c99ff316cc251c3c3a71d927
   }
 }
