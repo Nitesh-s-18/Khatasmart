@@ -10,6 +10,7 @@ import Settings from './pages/settings'
 import Rag from './pages/ragknowledgeassistant'
 import './App.css'
 import Register from './pages/register'
+import { ToastContainer } from 'react-toastify'
 function App()
 {
   return (
@@ -27,6 +28,11 @@ function App()
       <Route path='/register' element={<Register/>}/>
       
      </Routes>
+     <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        theme="colored"
+      />
     </BrowserRouter>
   )
 }

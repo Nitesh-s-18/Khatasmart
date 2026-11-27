@@ -52,7 +52,7 @@ div:has(> .image) {
 .lbutton {
 
     justify-self: start;
-    background-color: #0866e8;
+    background-color: blue;
     color: white;
     padding: 12px 28px;
     border-radius: 8px;
