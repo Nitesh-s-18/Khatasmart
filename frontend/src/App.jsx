@@ -10,6 +10,7 @@ import Settings from './pages/settings'
 import Rag from './pages/ragknowledgeassistant'
 import './App.css'
 import Register from './pages/register'
+import Layout from './pages/layout'
 import { ToastContainer } from 'react-toastify'
 function App()
 {
@@ -17,15 +18,19 @@ function App()
     <BrowserRouter>
      <Routes>
       <Route path="/" element={<Landing />}/>
+      <Route path="/login" element={<Login />}/>
+       <Route path='/register' element={<Register/>}/>
+
+       <Route element={<Layout />}>
       <Route path="/credit" element={<CreditLedger />}/>
       <Route path="/customers" element={<Customers />}/>
       <Route path="/dashboard" element={<Dashboard />}/>
-      <Route path="/finance" element={<Finance />}/>
-      <Route path="/login" element={<Login />}/>
+      <Route path="/finance" element={<Finance />}/>      
       <Route path="/remainders" element={<Remainders />}/>
       <Route path="/rag" element={<Rag />}/>
       <Route path="/settings" element={<Settings />}/>
-      <Route path='/register' element={<Register/>}/>
+      </Route>
+     
       
      </Routes>
      <ToastContainer
