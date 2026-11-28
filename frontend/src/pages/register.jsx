@@ -1,7 +1,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { resgisterschema } from "../components/formschema/registerschema";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 function Register() {
@@ -51,6 +51,7 @@ function Register() {
 
         <button type="submit" className='bg-indigo-500 mt-5 mx-auto block rounded-sm px-3 py-1 font-semibold text-white hover:bg-indigo-500'>SUBMITT</button>
         </form>
+        <p> Already have an Account?<Link className="text-blue-500 " to={"/login"}>     Login</Link></p>
         </div>
         </div>
         </>

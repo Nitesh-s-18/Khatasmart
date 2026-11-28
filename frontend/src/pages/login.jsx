@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import image from '../assets/logo.png'
 import logo from '../assets/image.png'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 function Login()
 {
@@ -53,6 +53,7 @@ function Login()
              <input type="password" required className=" block w-full rounded-md border border-black px-3 py-2" placeholder='Enter Your password' name='password'onChange={handlechange}/> </div>
         <button type="submit"  className="mt-2 w-full rounded-lg bg-blue-600 px-4 py-3 font-bold text-white shadow-md transition hover:bg-blue-700 active:scale-95">Submit</button>
    </form>
+    <p> Don't have an Account?<Link className="text-blue-500 " to={"/register"}>Register</Link></p>
    </div>
    </div>
    </>
